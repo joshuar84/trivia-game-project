@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game Three Ways</title>
+    <link rel="stylesheet" href="./game.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
+    <script type="module" src="game.js" async defer></script>
+</head>
+
+<body>
+    <main>
+        <div id="game-board">
+            <button id="use-callback" class="pure-button">Use a callback</button>
+            <button id="use-promise" class="pure-button">Use a promise</button>
+            <button id="use-async-await" class="pure-button">Use async/await</button>
+            <div id="score"></div>
+            <div id="category-title"></div>
+            <div id="question"></div>
+            <div id="value"></div>
+            <div id="invalid-count"></div>
+            <form class="pure-form">
+                <textarea id="player-response" class="pure-input-1"></textarea>
+            </form>
+            <button id="check-response" class="pure-button" class="is-hidden">Check response</button>
+            <div id="answer" class="is-hidden"></div>
+        </div>
+    </main>
+</body>
+
+</html>
